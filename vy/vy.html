@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyomveda Skyscope - Autonomous Exploration System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-glow {
+            box-shadow: 0 0 80px -10px rgba(249, 115, 22, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3 text-2xl font-bold text-white">
+                <!-- SVG Logo -->
+                <svg class="w-10 h-10 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.84 4.16c-2.38-2.38-6.22-2.38-8.6 0s-2.38 6.22 0 8.6c.36.36.75.68 1.16.96"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.16 19.84c2.38 2.38 6.22 2.38 8.6 0s2.38-6.22 0-8.6c-.36-.36-.75-.68-1.16-.96"></path></svg>
+                <span>VYOMVEDA <span class="text-orange-500">SKYSCOPE</span></span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="hover:text-orange-500 transition-colors duration-300">About</a>
+                <a href="#tech" class="hover:text-orange-500 transition-colors duration-300">Technology</a>
+                <a href="#impact" class="hover:text-orange-500 transition-colors duration-300">Impact</a>
+                <a href="#mars-challenge" class="hover:text-orange-500 transition-colors duration-300">Mars</a>
+                <a href="#team" class="hover:text-orange-500 transition-colors duration-300">Team</a>
+            </div>
+            <div class="md:hidden">
+                <!-- Mobile menu button can be added here if needed -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-gray-900 opacity-50 z-10"></div>
+            <div class="absolute inset-0 z-0">
+                 <!-- Background visual effect -->
+                <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-700 rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-blob"></div>
+                <div class="absolute top-1/2 right-1/4 w-96 h-96 bg-orange-500 rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+            </div>
+            <div class="container mx-auto px-6 text-center z-20">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">
+                    Autonomous Drone-Rover System
+                </h1>
+                <p class="text-xl md:text-2xl font-semibold text-orange-400 mb-8 hero-glow inline-block px-4 py-2 rounded-lg">
+                    “Exploring Beyond Limits“
+                </p>
+                <p class="max-w-3xl mx-auto text-gray-300 text-lg">
+                    An integrated drone and rover platform for terrestrial & extraterrestrial missions, designed for the Smart India Hackathon 2025.
+                </p>
+            </div>
+        </section>
+
+        <!-- About the Project Section -->
+        <section id="about" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white">The <span class="text-orange-500">Mission</span></h2>
+                    <p class="text-gray-400 mt-2">Combining aerial scouting with ground-level operations for unparalleled exploration.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="p-8 bg-gray-800 rounded-lg">
+                        <h3 class="text-2xl font-bold text-orange-500 mb-4">Core Idea</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Our project integrates an autonomous drone and rover into a single, cohesive system. This platform is engineered for both terrestrial and extraterrestrial missions, combining the drone's aerial scouting capabilities with the rover's robust ground-level operations. The primary goal is to achieve efficient exploration, detailed mapping, and resource extraction in the most challenging terrains imaginable.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-800 p-6 rounded-lg text-center">
+                            <svg class="w-12 h-12 text-orange-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V7a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            <h4 class="font-semibold text-white">Heat Mapping</h4>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg text-center">
+                           <svg class="w-12 h-12 text-orange-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path></svg>
+                            <h4 class="font-semibold text-white">Water Detection</h4>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg text-center">
+                            <svg class="w-12 h-12 text-orange-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <h4 class="font-semibold text-white">Resource Mapping</h4>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg text-center">
+                            <svg class="w-12 h-12 text-orange-500 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                            <h4 class="font-semibold text-white">Solar Powered</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Approach Section -->
+        <section id="tech" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white">Technical <span class="text-orange-500">Approach</span></h2>
+                    <p class="text-gray-400 mt-2">Leveraging cutting-edge technology for autonomous operation.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Card 1: System Architecture -->
+                    <div class="bg-gray-800 p-8 rounded-lg border border-orange-500/20 shadow-lg shadow-orange-500/5">
+                        <h3 class="text-xl font-bold text-orange-500 mb-3">System Architecture</h3>
+                        <p class="text-gray-300"><span class="font-semibold">Drone:</span> Performs aerial mapping, terrain analysis, and obstacle detection.</p>
+                        <p class="text-gray-300 mt-2"><span class="font-semibold">Rover:</span> Handles ground mobility, resource collection, and acts as a data relay.</p>
+                    </div>
+                    <!-- Card 2: Autonomy -->
+                    <div class="bg-gray-800 p-8 rounded-lg border border-orange-500/20 shadow-lg shadow-orange-500/5">
+                        <h3 class="text-xl font-bold text-orange-500 mb-3">Autonomy & AI</h3>
+                        <p class="text-gray-300">AI-driven navigation using SLAM (Simultaneous Localization & Mapping) is at the core of our system.</p>
+                        <p class="text-gray-300 mt-2">We utilize sensor fusion with LiDAR, cameras, IMUs, Radar, and more for robust environmental awareness.</p>
+                    </div>
+                    <!-- Card 3: Communication & Power -->
+                    <div class="bg-gray-800 p-8 rounded-lg border border-orange-500/20 shadow-lg shadow-orange-500/5">
+                        <h3 class="text-xl font-bold text-orange-500 mb-3">Communication & Power</h3>
+                        <p class="text-gray-300">Drone-to-Rover coordination is managed via wireless mesh networks, ensuring constant contact.</p>
+                        <p class="text-gray-300 mt-2">The system is powered by solar charging stations and swappable batteries for long-duration missions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact & Benefits Section -->
+        <section id="impact" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white">Impact & <span class="text-orange-500">Applications</span></h2>
+                    <p class="text-gray-400 mt-2">From space exploration to disaster recovery, our system makes a difference.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-gray-800 p-8 rounded-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-xl font-semibold text-orange-500 mb-2">Scientific Impact</h3>
+                        <p class="text-gray-300">Supports critical space missions on the Moon and Mars, and advances autonomous robotics research.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-xl font-semibold text-orange-500 mb-2">Practical Applications</h3>
+                        <p class="text-gray-300">Ideal for search & rescue in disaster zones, mining in hazardous areas, and environmental monitoring.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-xl font-semibold text-orange-500 mb-2">Key Benefits</h3>
+                        <p class="text-gray-300">Reduces human risk, increases exploration efficiency and accuracy, and provides a scalable, adaptable solution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mars Challenge Section -->
+        <section id="mars-challenge" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white">Martian Exploration: <span class="text-orange-500">Challenges & Solutions</span></h2>
+                    <p class="text-gray-400 mt-2">Understanding the hurdles of flying on another world, inspired by NASA's Ingenuity.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 mb-12">
+                    <!-- Challenges Column -->
+                    <div class="bg-gray-800 p-8 rounded-lg border border-red-500/30">
+                        <h3 class="text-2xl font-bold text-red-400 mb-6 flex items-center"><span class="text-3xl mr-3">🚧</span> Challenges of Flying on Mars</h3>
+                        <ul class="space-y-4 text-gray-300">
+                            <li><strong class="text-white">Thin Atmosphere:</strong> Only 1% of Earth’s air density makes generating lift extremely difficult, equivalent to flying at 22 miles altitude on Earth.</li>
+                            <li><strong class="text-white">Low Temperatures:</strong> Nighttime temperatures can drop to -80°C, risking frozen batteries and damaged electronics.</li>
+                            <li><strong class="text-white">No GPS or Real-Time Control:</strong> Signal delays of up to 20 minutes make live control impossible, and there is no GPS system on Mars.</li>
+                            <li><strong class="text-white">Dust and Terrain Hazards:</strong> Frequent dust storms and uneven terrain create risky navigation and landing conditions.</li>
+                            <li><strong class="text-white">Seasonal Atmospheric Changes:</strong> Air density can drop even further during certain Martian seasons, reducing lift and thrust margins.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Solutions Column -->
+                    <div class="bg-gray-800 p-8 rounded-lg border border-green-500/30">
+                        <h3 class="text-2xl font-bold text-green-400 mb-6 flex items-center"><span class="text-3xl mr-3">✅</span> Solutions That Made It Possible</h3>
+                        <ul class="space-y-4 text-gray-300">
+                            <li><strong class="text-white">Ultra-Light Design:</strong> Ingenuity weighs just 1.8 kg, utilizing a carbon fiber frame to minimize mass.</li>
+                            <li><strong class="text-white">High-Speed Rotors:</strong> Blades spin at 2400 rpm (nearly 5x faster than Earth helicopters) to compensate for the thin air.</li>
+                            <li><strong class="text-white">Autonomous Navigation:</strong> Onboard sensors (IMU, altimeter, camera) and pre-programmed flight paths, with visual odometry to track movement without GPS.</li>
+                            <li><strong class="text-white">Solar-Powered Battery System:</strong> A dedicated solar panel charges lithium-ion batteries for short flights and to keep electronics warm.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Future Improvements -->
+                <div class="text-center">
+                    <h3 class="text-3xl font-bold text-white mb-8">Future <span class="text-orange-500">Improvements</span></h3>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h4 class="font-semibold text-orange-400 mb-2">Adaptive Rotor Control</h4>
+                            <p class="text-gray-400 text-sm">For dynamically changing air density.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h4 class="font-semibold text-orange-400 mb-2">AI-Based Terrain Analysis</h4>
+                            <p class="text-gray-400 text-sm">For smarter, safer navigation.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h4 class="font-semibold text-orange-400 mb-2">Swarm Coordination</h4>
+                            <p class="text-gray-400 text-sm">For collaborative multi-drone missions.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h4 class="font-semibold text-orange-400 mb-2">Advanced Insulation</h4>
+                            <p class="text-gray-400 text-sm">For longer survival in extreme cold zones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Team Section -->
+        <section id="team" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white">Meet The <span class="text-orange-500">Team</span></h2>
+                    <p class="text-gray-400 mt-2">The minds behind Vyomveda Skyscope.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center font-bold text-3xl text-gray-900">AM</div>
+                        <h4 class="font-semibold text-white">Alok Mishra</h4>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center font-bold text-3xl text-gray-900">VNT</div>
+                        <h4 class="font-semibold text-white">Vayu Nandan Tripathi</h4>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center font-bold text-3xl text-gray-900">AD</div>
+                        <h4 class="font-semibold text-white">Apoorva Dwivedi</h4>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center font-bold text-3xl text-gray-900">SC</div>
+                        <h4 class="font-semibold text-white">Sushant Chaturvedi</h4>
+                    </div>
+                     <div class="text-center">
+                        <div class="w-24 h-24 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center font-bold text-3xl text-gray-900">AK</div>
+                        <h4 class="font-semibold text-white">Akshita Katiyar</h4>
+                    </div>
+                     <div class="text-center">
+                        <div class="w-24 h-24 bg-orange-500 rounded-full mx-auto mb-2 flex items-center justify-center font-bold text-3xl text-gray-900">KKS</div>
+                        <h4 class="font-semibold text-white">Krish Kumar Singh</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-orange-500/20">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-400">
+            <p>&copy; 2025 VYOMVEDA SKYSCOPE. A project for Smart India Hackathon.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
